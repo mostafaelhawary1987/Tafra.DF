@@ -20,6 +20,19 @@ $(".closebtn,.overlay").click( function() {
   $('body').removeClass('ovh');
 });
 
+var $mediaElements = $('.course');
+$('.tabs-sec .tab-a').click(function (e) {
+    e.preventDefault();
+    var filterVal = $(this).data('filter');
+    $(".tabs-sec .tab-a").not(this).removeClass("active");
+    $(this).toggleClass("active");
+    $mediaElements.removeClass("active").filter('.' + filterVal).addClass("active");
+    // if (filterVal === 'one') {
+    //   $mediaElements.show();
+    // } else {
+        
+    // }
+});
 
 
  $("#nav-icon").click( function() {
@@ -122,6 +135,35 @@ $('.partners_slider').owlCarousel({
     },
     1200:{
       items:5
+    }
+  }
+}); 
+$('.ge-slider-one').owlCarousel({
+  items:6,
+  autoplay:false,
+  rtl:true,
+  loop: true,
+  margin:18,
+  nav:false,
+     dots:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    425:{
+      items:1
+    },
+    768:{
+      items:1
+    },
+    991:{
+      items:2
+    },
+    1199:{
+      items:2
+    },
+    1200:{
+      items:4
     }
   }
 }); 
