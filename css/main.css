@@ -410,7 +410,7 @@ color: var(--sec-color);
 }
 
 .slider-ti h4 {
-  font-size: 77px;
+  font-size: 46px;
   font-weight: 900;
   color: var(--text-color);
   margin-top: 16px;
@@ -698,6 +698,7 @@ color: var(--sec-color);
   border-radius: 25px;
   margin-bottom: 15px;
   position: relative;
+  cursor: grab;
   -webkit-box-shadow: 0px 0px 8px 0px rgb(1 1 1 / 10%);
   box-shadow: 0px 0px 8px 0px rgb(1 1 1 / 10%);
   -webkit-transition: all 0.5s;
@@ -705,6 +706,7 @@ color: var(--sec-color);
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+ 
 }
 .feat-one::before,.feat-one::after{
   content:"";
@@ -1292,7 +1294,7 @@ textarea::placeholder {
 .copy-right span{display: inline;color: #BEBEBE;font-size: 11px;}
 
 
-@media (max-width:1920px){
+@media (min-width:1920px){
   .about-photo::after {
     left: 299px;}
  }
@@ -1310,6 +1312,7 @@ textarea::placeholder {
  }
  @media (max-width:992px){}
 @media (max-width:991px){
+  .slider-ti h4{width: 65%;}
   .menu-head-menu{display: none;}
   .lang-head-menu{display: none;}
   .photo-head img {
@@ -1447,16 +1450,14 @@ footer {
   top: 70%;
 }
 .slider-ti h4 {
-  font-size: 60px;
+  font-size: 35px;
 }
 }
 @media (max-width:480px){
   .photo-head img {
     height: 60vh;
 }
-.slider-ti h4 {
-  font-size: 50px;
-}
+
 .about-photo img {
   width: 90%;
   height: 100%;
@@ -1519,6 +1520,18 @@ display: none;
 }
 }
 @media (max-width:425px){
+  .slider-ti h4 {
+    font-size: 25px;
+}
+.slider-title {
+
+  top: 48%;
+
+}
+.side-slider .owl-dots {
+  right: 2%;
+  top: 85%;
+}
   .photo-head img {
     height: 48vh;
 }
@@ -1563,6 +1576,7 @@ display: none;
 
 }
 @media (max-width:375px){
+  .loader img{width: 350px;}
   .foot-ti {
     flex-direction: column;
 }
@@ -1590,14 +1604,15 @@ display: none;
   font-size: 14px;}
 }
 @media (max-width:325px){
+  .loader img{width: 320px;}
 .photo-head img {
   height: 35vh;
 }
 .slider-ti h2 {
-  font-size: 24px;
+  font-size: 18px;
 }
 .slider-ti h4 {
-  font-size: 33px;
+  font-size: 20px;
   margin-top: 0;
 }
 .slider-ti a {
