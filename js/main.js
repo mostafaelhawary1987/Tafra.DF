@@ -69,9 +69,9 @@ $(window).on("load", function () {
   });
 });
 $('.slider-head').owlCarousel({
-  autoplay: false,
+  autoplay: true,
   rtl: true,
-  loop: false,
+  loop: true,
   dots:true,
   nav: false,
   items: 1,
@@ -82,7 +82,7 @@ $('.slider-head').owlCarousel({
 });
 $('.partner_slider').owlCarousel({
   items:5,
-  autoplay:false,
+  autoplay:true,
   rtl:true,
   loop: true,
   margin:18,
@@ -111,7 +111,7 @@ $('.partner_slider').owlCarousel({
 }); 
 $('.partners_slider').owlCarousel({
   items:5,
-  autoplay:false,
+  autoplay:true,
   rtl:true,
   loop: true,
   margin:18,
