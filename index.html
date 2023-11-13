@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/hover-min.css" />
-    <link rel="stylesheet" href="css/main.css?v=1.1"> 
+    <link rel="stylesheet" href="css/main.css?v=1.2">
 </head>
-
+ 
 <body>
   <div class="overlay" id="closeNav"></div>
   <!-- Start Loader -->
@@ -59,19 +59,19 @@
                   <a href="#!">الرئيسية</a>
                 </li>
                 <li>
-                  <a href="#!">من نحن</a>
+                  <a href="#about">من نحن</a>
                 </li>
                 <li>
-                  <a href="#!">مجالات التنمية</a>
+                  <a href="#development">مجالات التنمية</a>
                 </li>
                 <li>
-                  <a href="#!">المشروعات الحالية</a>
+                  <a href="#projects">المشروعات الحالية</a>
                 </li>
                 <li>
-                  <a href="#!">الصور</a>
+                  <a href="#gallery">الصور</a>
                 </li>
                 <li>
-                  <a href="#!">اتصل بنا</a>
+                  <a href="#contact">اتصل بنا</a>
                 </li>
               </ul>
             </div>
@@ -143,7 +143,7 @@
       </div>
       <div class="slider-item">
         <div class="photo-head">
-            <img src="images/slider.jpg" class="img-fluid" alt="#">
+            <img src="images/slide2.png" class="img-fluid" alt="#">
         </div>
         <div class="slider-title">
                 <div class="container">
@@ -158,7 +158,7 @@
       </div>
     </div>
   </section>
-  <section class="main-about-section">
+  <section id="about" class="main-about-section">
     <div class="container">
       <div class="main-about-flex">
         <div class="about-content">
@@ -251,7 +251,7 @@
         </div>
       </section>
       <!-- End Numbers -->
-      <section class="main-features-section">
+      <section id="development" class="main-features-section">
         <div class="container">
           <div class="feat-text">
             <h2>مجالات التنمية</h2>
@@ -396,7 +396,7 @@
           </div>
         </div>
       </section>
-      <section class="main-partners-section">
+      <section id="projects" class="main-partners-section">
         <div class="container">
           <div class="feat-text">
             <h2>المشروعات الحالية</h2>
@@ -404,35 +404,36 @@
           <div class="partner_slider owl-carousel">
 
             <div class="item partner">
-                <div class="br_photo">
-                  <a href="https://tafra.tafra-eg.org/" target="_blank">
-                    <img src="images/poo7.jpeg" class="img-fluid" alt="partner">
-                  </a>
-                </div>
-            </div>
-            <div class="item partner">
-                <div class="br_photo">
-                  <a href="https://mehany.tafra-eg.org/" target="_blank">
-                    <img src="images/m3.jpg" class="img-fluid" alt="partner">
-                  </a>
-                </div>
-            </div>
-           
-            <div class="item partner">
-                <div class="br_photo">
-                  <a href="https://tafra.tafra-eg.org/">
-                    <img src="images/m4.jpg" class="img-fluid" alt="partner">
-                  </a>
-                </div>
-            </div>
-            <div class="item partner">
+              <div class="br_photo">
+                <a href="https://tafra.tafra-eg.org/" target="_blank">
+                  <img src="images/poo7.jpeg" class="img-fluid" alt="partner">
+                </a>
+              </div>
+          </div>
+          <div class="item partner">
               <div class="br_photo">
                 <a href="https://mehany.tafra-eg.org/" target="_blank">
                   <img src="images/m3.jpg" class="img-fluid" alt="partner">
                 </a>
               </div>
           </div>
+         
+          <div class="item partner">
+              <div class="br_photo">
+                <a href="https://tafra.tafra-eg.org/">
+                  <img src="images/m4.jpg" class="img-fluid" alt="partner">
+                </a>
+              </div>
+          </div>
           
+          <div class="item partner">
+            <div class="br_photo">
+              <a href="https://mehany.tafra-eg.org/" target="_blank">
+                <img src="images/m3.jpg" class="img-fluid" alt="partner">
+              </a>
+            </div>
+        </div>
+            
           </div>
         </div>
       </section>
@@ -462,14 +463,13 @@
                 <iframe width="320" height="315" src="https://www.youtube.com/embed/5Jsve_RGpyU?si=zwaFQrjSOBMUCW36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
         </div> 
-            
           </div>
         </div>
       </section>
      
       <section class="tabs-sec main-gallery-section" id="course">
         <div class="container">
-          <div class="feat-text">
+          <div id="gallery" class="feat-text">
             <h2>معرض الصور</h2>
           </div>
           <ul class="tab-ul fixall list-unstyled">
@@ -652,7 +652,7 @@
           </div>
         </div>
       </section>
-      <section class="main-contact-section">
+      <section id="contact" class="main-contact-section">
         <div class="container">
           <div class="contact-flex">
             <div class="contact-title">
@@ -759,7 +759,7 @@
         </a>
         </div>
       </footer>
-      
+
 
     
 <script src="js/jquery.min.js"></script>
