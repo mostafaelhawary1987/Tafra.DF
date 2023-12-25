@@ -151,6 +151,52 @@ $('.partner_slider').owlCarousel({
        
       },
     });
+    var evswiper = new Swiper(".events-two-section .swiper-container", {
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 5300,
+      },
+      navigation: {
+        nextEl: ".events-one-section .swiper-btn-next",
+        prevEl: ".events-one-section .swiper-btn-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+       
+      },
+    });
+    var evswiper = new Swiper(".events-thr-section .swiper-container", {
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 5300,
+      },
+      navigation: {
+        nextEl: ".events-one-section .swiper-btn-next",
+        prevEl: ".events-one-section .swiper-btn-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+       
+      },
+    });
 $('.partners_slider').owlCarousel({
   items:5,
   autoplay:true,

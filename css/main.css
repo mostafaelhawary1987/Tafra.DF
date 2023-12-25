@@ -2081,7 +2081,7 @@ display: none;
   background-color: rgb(249 165 27);
   width: 300px;
 }
-.events-title-news h2{margin-bottom: 0px;font-size: 20px;}
+.events-title-news h2{margin-bottom: 10px;font-size: 20px;}
 .events-flex-search .fir-form{width: 70%;}
 .events-flex-search .fir-form input {
   border: 3px solid rgb(255 255 255);
@@ -2173,23 +2173,23 @@ display: none;
           justify-content: center;
   border-radius: 16px;
   color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  background-color: #f9a51b;
+  font-weight: 500;
+  font-size: 13px;
+  background-color: var(--sec-color);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .news .news-link:hover {
-  background-color: #4f463d;
+  background-color: var(--main-color);
   color: #fff;
   text-decoration: none;
 }
 
 .news .news-name {
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 4px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -2201,7 +2201,7 @@ display: none;
 }
 
 .news .news-name:hover {
-  color: #f9a51b;
+  color: var(--sec-color);
   text-decoration: none;
 }
 
@@ -2218,7 +2218,7 @@ display: none;
 
 .news .date i {
   color: #4f463d;
-  font-size: 12px;
+  font-size: 15px;
   -webkit-margin-end: 6px;
           margin-inline-end: 6px;
 }
@@ -2660,4 +2660,76 @@ ul.tagret-list  li{ list-style-type: square;}
   display: list-item;
   list-style-position: inside;
   margin: 4px 25px;
+}
+@media (max-width: 480px) {
+  .about-main>a {
+    font-size: 20px;
+}
+.event-details .about-title {
+  font-size: 23px;}
+  .event-title {
+    padding: 25px 22px;
+    margin-bottom: 25px;
+}
+.speakers-flex {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.view-event {
+  flex-direction: column;}
+  .view-event {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.view-event a.view-two {
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  margin: 10px 0px;
+}
+.event-one {
+  padding-bottom: 45px;
+}
+}
+/* payment index */
+.payment-section{padding-top: 50px;padding-bottom: 390px;}
+.cont-flex{
+  background-color: #f3f3f3;
+  border-radius: 25px;
+  padding: 40px 10px
+}
+.pay-send .form-submit{
+  width: 153px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: 'alR';
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--main-color);
+    padding: 0;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 24px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin: 20px auto 0;
+}
+.form-submit:hover, .form-submit:focus {
+  background-color: var(--sec-color);
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .payment-section {
+
+    padding-bottom: 80px;
+}
 }
