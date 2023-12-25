@@ -12,9 +12,11 @@
 
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/line-awesome.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flatpicker.css" />
     <link rel="stylesheet" href="css/hover-min.css" />
     <link rel="stylesheet" href="css/main.css?v=1.2">
 </head>
@@ -158,6 +160,55 @@
       </div>
     </div>
   </section>
+      <!-- Start Live -->
+      <section class="live-section">
+        <div class="container">
+          <div class="counter-slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="live-cont">
+                    <a href="#!" class="course-name xs-name">
+                      خبير 1 (التعليم قبل الجامعي) إعداد مراقبين لجودة التعليم
+                    </a>
+                    <div class="live-text">
+                      <a href="#!" class="course-name">
+                        خبير 1 (التعليم قبل الجامعي) إعداد مراقبين لجودة التعليم
+                      </a>
+                      <div class="info-line">
+                        <div class="item">
+                          <i class="fas fa-calendar-alt"></i>
+                          19 فبراير 2024
+                        </div>
+                        <div class="item">
+                          <i class="fas fa-video"></i>
+                          Zoom
+                        </div>
+                      </div>
+                      <div class="timer" data-time="29 mar 2024 0:56:00">
+                        <div class="time seconds"></div>
+                        <span>:</span>
+                        <div class="time minutes"></div>
+                        <span>:</span>
+                        <div class="time hours"></div>
+                      </div>
+                      <!-- <p id="demo"></p> -->
+                      <div class="live-btns">
+                        <a href="#!" class="live-btn-info">المزيد من التفاصيل</a>
+                        <a href="#!" class="live-btn">الدورة جارية الأن</a>
+                      </div>
+                    </div>
+                    <div class="live-img">
+                      <img src="images/course1.jpg" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Live -->
   <section id="about" class="main-about-section">
     <div class="container">
       <div class="main-about-flex">
@@ -1048,9 +1099,41 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/flatpicker.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/wow.min.js"></script> 
 <script src="js/main.js"></script>
+<!-- <script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script> -->
 <script>
     new WOW().init();
 </script>
