@@ -112,22 +112,31 @@ $('.partner_slider').owlCarousel({
     }
   }
 }); 
-  //////////** counter slider **//////////
-  // var counterswiper = new Swiper(".counter-slider .swiper-container", {
-  //   spaceBetween: 15,
-  //   loop: true,
-  //   // autoplay: {
-  //   //   delay: 5100,
-  //   // },
-  //   on: {
-  //     init: function (swiper) {
-  //       setInterval(function () {
-  //         makeTimer();
-  //       }, 1000);
-  //     },
-  //   },
-  // });
+
     //////////** Events slider **//////////
+    var evswiper = new Swiper(".events-home-section .swiper-container", {
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 5300,
+      },
+      navigation: {
+        nextEl: ".events-one-section .swiper-btn-next",
+        prevEl: ".events-one-section .swiper-btn-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+       
+      },
+    });
     var evswiper = new Swiper(".events-one-section .swiper-container", {
       spaceBetween: 0,
       loop: true,
@@ -400,6 +409,4 @@ $(window).scroll(function () {
   }
 });
 
-// if ($(window).width() <= 480){ 
-//     $(".wow").removeClass("wow");
-//     }
+

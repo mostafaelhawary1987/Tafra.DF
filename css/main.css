@@ -1700,6 +1700,8 @@ display: none;
   -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  border-radius: 25px;
+    overflow: hidden;
 }
 
 @media (max-width: 991px) {
@@ -1743,9 +1745,9 @@ display: none;
 }
 
 .live-cont .live-text {
-  padding: 35px 0;
-  -webkit-padding-start: 68px;
-          padding-inline-start: 68px;
+
+  -webkit-padding-start: 35px;
+          padding-inline-start: 35px;
 }
 
 @media (max-width: 991px) {
@@ -1959,7 +1961,7 @@ display: none;
   font-size: 16px;
   color: #fff;
   font-weight: 700;
-  background-color: #f9a51b;
+  background-color: var(--sec-color);
   width: 182px;
   height: 46px;
   border-radius: 23px;
@@ -1977,7 +1979,7 @@ display: none;
 }
 
 .live-cont .live-btn-info:hover {
-  background-color: #4f463d;
+  background-color: var(--main-color);
   color: #fff;
   text-decoration: none;
 }
@@ -2010,7 +2012,7 @@ display: none;
 }
 
 .live-cont .live-btn:hover {
-  background-color: #4f463d;
+  background-color: var(--main-color);
   color: #fff;
   text-decoration: none;
 }
@@ -2049,7 +2051,7 @@ display: none;
             order: 2;
     aspect-ratio: 1;
     width: 100%;
-    height: auto;
+    height: 350px;
   }
 }
 
@@ -2732,4 +2734,35 @@ ul.tagret-list  li{ list-style-type: square;}
 
     padding-bottom: 80px;
 }
+}
+/*  */
+
+.events-home-section{
+  padding-top: 60px;
+    padding-bottom: 55px;
+    background-color: var(--main-color);
+}
+.events-home-section .news .news-name{color: #fff;}
+.events-home-section .news .date i {
+  color: #dbdbdb;
+}
+.events-home-section .news .date {
+  color: #d3d3d3;
+
+}
+.events-home-section .news .news-name:hover {
+  color: var(--sec-color);
+}
+#countdown ul {display: flex;justify-content: center;}
+#countdown ul li:first-of-type{
+  margin-right: 15px;
+}
+#countdown ul li span{
+  font-size: 25px;color: red;display: block;
+}
+#countdown ul li.separator{
+  margin: 0 10px;
+  font-size: 25px;
+  line-height: 1;
+  color: red;
 }

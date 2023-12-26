@@ -169,37 +169,41 @@
                 <div class="swiper-slide">
                   <div class="live-cont">
                     <a href="#!" class="course-name xs-name">
-                      خبير 1 (التعليم قبل الجامعي) إعداد مراقبين لجودة التعليم
+                      مؤتمر التدريب المهني والتقني الاول (مهني 2030)
                     </a>
                     <div class="live-text">
                       <a href="#!" class="course-name">
-                        خبير 1 (التعليم قبل الجامعي) إعداد مراقبين لجودة التعليم
+                        مؤتمر التدريب المهني والتقني الاول (مهني 2030)
                       </a>
                       <div class="info-line">
                         <div class="item">
                           <i class="fas fa-calendar-alt"></i>
-                          19 فبراير 2024
+                          28 ديسمبر 2023
                         </div>
-                        <div class="item">
-                          <i class="fas fa-video"></i>
-                          Zoom
-                        </div>
+
                       </div>
-                      <div class="timer" data-time="29 mar 2024 0:56:00">
-                        <div class="time seconds"></div>
-                        <span>:</span>
-                        <div class="time minutes"></div>
-                        <span>:</span>
-                        <div class="time hours"></div>
+
+                      <div id="countdown">
+                        <ul>
+                          <li><span id="seconds"></span>ثوانى</li>
+                          <li class="separator">:</li>
+                          <li><span id="minutes"></span>دقائق</li>
+                          <li class="separator">:</li>
+                          <li><span id="hours"></span>ساعات</li>
+                          <li class="separator"></li>
+                          <li><span id="days"></span>ايام</li>
+                          
+                          
+                        </ul>
                       </div>
                       <!-- <p id="demo"></p> -->
                       <div class="live-btns">
                         <a href="#!" class="live-btn-info">المزيد من التفاصيل</a>
-                        <a href="#!" class="live-btn">الدورة جارية الأن</a>
+                        <a href="#!" class="live-btn">قريبا</a>
                       </div>
                     </div>
                     <div class="live-img">
-                      <img src="images/course1.jpg" class="img-fluid" />
+                      <img src="images/course5.jpg" class="img-fluid" />
                     </div>
                   </div>
                 </div>
@@ -932,6 +936,97 @@
           
         </div>
       </section>
+      <section class="events-home-section">
+        <div class="container">
+          <div class="main-vedio-text">
+            <h2>المؤتمرات</h2>
+          </div>
+          <div class="events-home-slider">
+            <div class="events-title-news">
+  
+
+                <div class="swiper-btns">
+                  <div class="swiper-btn-prev swiper-btn">
+                    <span class="fas fa-chevron-right"></span>
+                  </div>
+                  <div class="swiper-btn-next swiper-btn">
+                    <span class="fas fa-chevron-left"></span>
+                  </div>
+                </div>
+            </div>
+  
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="news">
+                  <div class="img-aspect">
+                    <a href="#!" class="news-img">
+                      <img src="images/course4.jpg" class="img-fluid" />
+                    </a>
+                    <a href="#!" class="news-link">التفاصيل</a>
+                  </div>
+                  <a href="#!" class="news-name">العصف الذهني وحل المشكلات</a>
+                  <div class="date">
+                    <i class="las la-calendar"></i>
+                    07/03/2024
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news">
+                  <div class="img-aspect">
+                    <a href="#!" class="news-img">
+                      <img src="images/course3.jpg" class="img-fluid" />
+                    </a>
+                    <a href="#!" class="news-link">التفاصيل</a>
+                  </div>
+                  <a href="#!" class="news-name"
+                    >العصف الذهني وحل المشكلات العصف الذهني وحل المشكلات</a
+                  >
+                  <div class="date">
+                    <i class="las la-calendar"></i>
+                    10/03/2024
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news">
+                  <div class="img-aspect">
+                    <a href="#!" class="news-img">
+                      <img src="images/course2.jpg" class="img-fluid" />
+                    </a>
+                    <a href="#!" class="news-link">التفاصيل</a>
+                  </div>
+                  <a href="#!" class="news-name">العصف الذهني وحل المشكلات</a>
+                  <div class="date">
+                    <i class="las la-calendar"></i>
+                    23/03/2024
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news">
+                  <div class="img-aspect">
+                    <a href="#!" class="news-img">
+                      <img src="images/course1.jpg" class="img-fluid" />
+                    </a>
+                    <a href="#!" class="news-link">التفاصيل</a>
+                  </div>
+                  <a href="#!" class="news-name">العصف الذهني وحل المشكلات</a>
+                  <div class="date">
+                    <i class="las la-calendar"></i>
+                    16/04/2024
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ask-send">
+            <button type="button" class="btn">المزيد</button>
+        </div>
+        </div>
+        </div>
+      </section>
       <section class="partners-main">
         <div class="container">
           <div class="feat-text">
@@ -1104,38 +1199,44 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/wow.min.js"></script> 
 <script src="js/main.js"></script>
-<!-- <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-  
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-  
-    // Get today's date and time
-    var now = new Date().getTime();
-      
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-      
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-      
-    // If the count down is over, write some text 
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-  </script> -->
+
 <script>
     new WOW().init();
+</script>
+<script>
+  var daysEl = document.getElementById('days')
+  var hoursEl = document.getElementById('hours')
+  var minutesEl = document.getElementById('minutes')
+  var secondsEl = document.getElementById('seconds')
+  function countdownTimer(){
+    const countDownDate = new Date('12/28/2023 09:00').getTime()
+    const second = 1000
+    const minute = second * 60
+    const hour = minute * 60
+    const day = hour * 24
+
+    const interval = setInterval(()=>{
+      const now = new Date().getTime()
+      const distance = countDownDate - now
+      daysEl.innerText = formatNumber(Math.floor(distance / day))
+      hoursEl.innerText = formatNumber(Math.floor((distance % day) / hour))
+      minutesEl.innerText = formatNumber(Math.floor((distance % hour) / minute))
+      secondsEl.innerText = formatNumber(Math.floor((distance % minute) / second))
+      if (distance < 0 ){
+        document.getElementById('headline').innerText = 'o'
+        document.getElementById('countdown').style.display = 'none'
+        clearInterval(interval)
+      }
+    },1000)
+  }
+function formatNumber(number){
+  if(number < 10 ){
+    return '0' + number
+  }
+  return number
+}
+countdownTimer()
+
 </script>
 
 </body>
