@@ -147,7 +147,23 @@
         <section class="event-one">
             <div class="container">
                 <div class="event-details">
+                  <div class="ev-flex">
+
                     <h3 class="about-title xs-title">مؤتمر التدريب المهني والتقني الاول (مهني 2030)</h3>
+                    <div id="countdown">
+                      <ul>
+                        <li><span id="seconds"></span>ثوانى</li>
+                        <li class="separator">:</li>
+                        <li><span id="minutes"></span>دقائق</li>
+                        <li class="separator">:</li>
+                        <li><span id="hours"></span>ساعات</li>
+                        <li class="separator"></li>
+                        <li><span id="days"></span>ايام</li>
+                        
+                        
+                      </ul>
+                    </div>
+                  </div>
                     <div class="row">
                       <div class="col-md-9">
                           <div class="event-title">
@@ -162,6 +178,7 @@
                                 <p>السيد معالي وزير وزارة العمل/ حسن شحاتة</p>
                           </div>
                       </div>
+
                       <div class="col-md-3">
                           <div class="event-cost">
                               <h1> EG 3000</h1>
@@ -172,6 +189,7 @@
                               <h3>28 ديسمبر 2023</h3>
                               <a href="#!" class="sign-event">سجل الأن</a>
                           </div>
+                          
                       </div>
                       <div class="col-md-9">
                         <div class="event-title">
@@ -382,6 +400,41 @@
 
 <script>
 new WOW().init();
+</script>
+<script>
+  var daysEl = document.getElementById('days')
+  var hoursEl = document.getElementById('hours')
+  var minutesEl = document.getElementById('minutes')
+  var secondsEl = document.getElementById('seconds')
+  function countdownTimer(){
+    const countDownDate = new Date('12/30/2023 09:00').getTime()
+    const second = 1000
+    const minute = second * 60
+    const hour = minute * 60
+    const day = hour * 24
+
+    const interval = setInterval(()=>{
+      const now = new Date().getTime()
+      const distance = countDownDate - now
+      daysEl.innerText = formatNumber(Math.floor(distance / day))
+      hoursEl.innerText = formatNumber(Math.floor((distance % day) / hour))
+      minutesEl.innerText = formatNumber(Math.floor((distance % hour) / minute))
+      secondsEl.innerText = formatNumber(Math.floor((distance % minute) / second))
+      if (distance < 0 ){
+        document.getElementById('headline').innerText = 'o6'
+        document.getElementById('countdown').style.display = 'none'
+        clearInterval(interval)
+      }
+    },1000)
+  }
+function formatNumber(number){
+  if(number < 10 ){
+    return '0' + number
+  }
+  return number
+}
+countdownTimer()
+
 </script>
 
 </body>

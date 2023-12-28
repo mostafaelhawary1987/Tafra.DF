@@ -2766,3 +2766,12 @@ ul.tagret-list  li{ list-style-type: square;}
   line-height: 1;
   color: red;
 }
+.ev-flex{display: flex;justify-content: space-between;}
+
+@media (max-width: 480px) {
+  .ev-flex{
+    flex-direction: column;
+    margin-bottom: 25px;
+
+  }
+}
