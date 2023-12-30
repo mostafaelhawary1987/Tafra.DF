@@ -116,10 +116,12 @@ $('.partner_slider').owlCarousel({
     //////////** Events slider **//////////
     var evswiper = new Swiper(".events-home-section .swiper-container", {
       spaceBetween: 0,
-      loop: true,
-      autoplay: {
-        delay: 5300,
-      },
+      centeredSlides: true,
+      loop: false,
+      autoplay:false,
+      // autoplay: {
+      //   delay: 5300,
+      // },
       navigation: {
         nextEl: ".events-one-section .swiper-btn-next",
         prevEl: ".events-one-section .swiper-btn-prev",
@@ -129,10 +131,10 @@ $('.partner_slider').owlCarousel({
           slidesPerView: 1,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         992: {
-          slidesPerView: 3,
+          slidesPerView: 1,
         },
        
       },
@@ -235,6 +237,35 @@ $('.partners_slider').owlCarousel({
     }
   }
 }); 
+$('.side-news').owlCarousel({
+  autoplay: true,
+  rtl: true,
+  margin:15,
+  loop:true,
+  nav: false,
+  dots:false,
+  navText: ["<i class='fas fa-chevron-right'></i>","<i class='fas fa-chevron-left'></i>"],
+  responsive: {
+      0: {
+          items: 1
+      },
+      480: {
+          items: 2
+      },
+      767: {
+          items: 3
+      },
+      991: {
+          items: 3   
+      },
+      1199: {
+          items: 4
+      },
+      1200: {
+          items: 4
+      }
+  }
+});
 $('.ge-slider-one').owlCarousel({
   items:6,
   autoplay:false,
